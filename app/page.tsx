@@ -243,8 +243,8 @@ export default function HomePage() {
           <div className="max-w-3xl mx-auto text-center space-y-6 text-primary-foreground">
             <div className="flex justify-center gap-2 mb-4">
               <Star className="w-8 h-8 fill-white text-white animate-pulse" />
-              <Star className="w-8 h-8 fill-white text-white animate-pulse delay-100" />
-              <Star className="w-8 h-8 fill-white text-white animate-pulse delay-200" />
+              <Star className="w-8 h-8 fill-white text-white animate-pulse" />
+              <Star className="w-8 h-8 fill-white text-white animate-pulse" />
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-balance">Ready to Start Your Journey?</h2>
             <p className="text-lg text-primary-foreground/90 text-pretty leading-relaxed">

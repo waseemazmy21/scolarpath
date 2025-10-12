@@ -12,8 +12,6 @@ export function Navigation() {
     { href: "/", label: "Home" },
     { href: "/scholarships", label: "Scholarships" },
     { href: "/blog", label: "Blog" },
-    { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
   ]
 
   return (

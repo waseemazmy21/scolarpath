@@ -4,21 +4,20 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Bright, motivational color scheme */
-  --background: oklch(0.99 0.005 106); /* Soft white with warm tint */
-  --foreground: oklch(0.25 0.015 264); /* Deep navy for text */
-  --card: oklch(1 0 0); /* Pure white for cards */
+  --background: oklch(0.99 0.005 106);
+  --foreground: oklch(0.25 0.015 264);
+  --card: oklch(1 0 0);
   --card-foreground: oklch(0.25 0.015 264);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.25 0.015 264);
-  --primary: oklch(0.45 0.15 264); /* Royal blue */
+  --primary: oklch(0.45 0.15 264);
   --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.55 0.12 165); /* Emerald green */
+  --secondary: oklch(0.55 0.12 165);
   --secondary-foreground: oklch(0.99 0 0);
-  --accent: oklch(0.75 0.15 85); /* Golden yellow */
-  --accent-foreground: oklch(0.25 0.015 264);
   --muted: oklch(0.96 0.005 264);
   --muted-foreground: oklch(0.55 0.015 264);
+  --accent: oklch(0.75 0.15 85);
+  --accent-foreground: oklch(0.25 0.015 264);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.99 0 0);
   --border: oklch(0.92 0.01 264);
@@ -30,7 +29,7 @@
   --chart-4: oklch(0.65 0.18 220);
   --chart-5: oklch(0.7 0.14 45);
   --radius: 0.75rem;
-  --sidebar: oklch(0.985 0 0);
+  --sidebar: oklch(1 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: oklch(0.205 0 0);
   --sidebar-primary-foreground: oklch(0.985 0 0);
@@ -122,111 +121,5 @@
   }
   body {
     @apply bg-background text-foreground;
-  }
-}
-
-/* Adding custom animations and decorative patterns for joyful design */
-@layer utilities {
-  /* Floating animation for decorative elements */
-  @keyframes float {
-    0%,
-    100% {
-      transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-      transform: translateY(-20px) rotate(5deg);
-    }
-  }
-
-  @keyframes float-slow {
-    0%,
-    100% {
-      transform: translateY(0px) translateX(0px);
-    }
-    50% {
-      transform: translateY(-30px) translateX(10px);
-    }
-  }
-
-  @keyframes pulse-glow {
-    0%,
-    100% {
-      opacity: 0.6;
-      transform: scale(1);
-    }
-    50% {
-      opacity: 0.8;
-      transform: scale(1.1);
-    }
-  }
-
-  @keyframes shimmer {
-    0% {
-      background-position: -1000px 0;
-    }
-    100% {
-      background-position: 1000px 0;
-    }
-  }
-
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-
-  .animate-float-slow {
-    animation: float-slow 8s ease-in-out infinite;
-  }
-
-  .animate-pulse-glow {
-    animation: pulse-glow 3s ease-in-out infinite;
-  }
-
-  /* Decorative dot pattern */
-  .dot-pattern {
-    background-image: radial-gradient(circle, oklch(0.45 0.15 264 / 0.1) 1px, transparent 1px);
-    background-size: 20px 20px;
-  }
-
-  /* Gradient text effect */
-  .gradient-text {
-    background: linear-gradient(135deg, oklch(0.45 0.15 264), oklch(0.55 0.12 165), oklch(0.75 0.15 85));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  /* Card hover effects */
-  .card-hover {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .card-hover:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 40px -12px oklch(0.45 0.15 264 / 0.2);
-  }
-
-  /* Colorful border animation */
-  .border-gradient {
-    position: relative;
-    background: white;
-    border-radius: var(--radius-lg);
-  }
-
-  .border-gradient::before {
-    content: "";
-    position: absolute;
-    inset: -2px;
-    border-radius: var(--radius-lg);
-    padding: 2px;
-    background: linear-gradient(135deg, oklch(0.45 0.15 264), oklch(0.55 0.12 165), oklch(0.75 0.15 85));
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-
-  .border-gradient:hover::before {
-    opacity: 1;
   }
 }
