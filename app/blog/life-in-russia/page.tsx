@@ -140,7 +140,7 @@ export default function LifeInRussiaPage() {
                 <div>
                   <h3 className="text-xl font-bold">Lomonosov Moscow State University (MSU)</h3>
                   <Badge className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white border-0 text-xs">
-                    QS #87 (2025)
+                    QS #105 (2025)
                   </Badge>
                 </div>
               </div>
@@ -168,7 +168,7 @@ export default function LifeInRussiaPage() {
                 <div>
                   <h3 className="text-xl font-bold">RUDN University</h3>
                   <Badge className="bg-gradient-to-r from-green-500 to-emerald-500 text-white border-0 text-xs">
-                    QS #295 (2025)
+                    QS #367 (2025)
                   </Badge>
                 </div>
               </div>
@@ -196,7 +196,7 @@ export default function LifeInRussiaPage() {
                 <div>
                   <h3 className="text-xl font-bold">Higher School of Economics (HSE)</h3>
                   <Badge className="bg-gradient-to-r from-red-500 to-orange-500 text-white border-0 text-xs">
-                    QS #312 (2025)
+                    QS #440 (2025)
                   </Badge>
                 </div>
               </div>
@@ -224,7 +224,7 @@ export default function LifeInRussiaPage() {
                 <div>
                   <h3 className="text-xl font-bold">National Research Nuclear University (MEPhI)</h3>
                   <Badge className="bg-gradient-to-r from-purple-500 to-pink-500 text-white border-0 text-xs">
-                    QS #355 (2025)
+                    QS #591 (2025)
                   </Badge>
                 </div>
               </div>
